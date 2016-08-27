@@ -1,6 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsBorderedLabels.Page1">
-	<Label Text="Hello" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="XamarinFormsBorderedLabels.Page1" BackgroundColor="#008">
+  <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+    <!-- Thin red border -->
+    <Frame Padding="0"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           OutlineColor="#f00"
+           WidthRequest="110"
+           HeightRequest="80"
+           >
+      <Label Text="Hello1" TextColor="#ff0" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" />
+    </Frame>
+
+    <!-- Thick red border, and black background -->
+    <Frame Padding="2"
+           BackgroundColor="#f00"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           WidthRequest="106"
+           HeightRequest="76">
+      <Frame Padding="0"
+             BackgroundColor="#000"
+             VerticalOptions="Fill"
+             HorizontalOptions="Fill">
+        <Label Text="Hello2" TextColor="#ff0" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" />
+      </Frame>
+    </Frame>
+
+    <!-- Thick red border (It has Label-like appearance, but it's not a Label but a Button  -->
+    <Button Text="Hello3"
+            BackgroundColor="Transparent"
+            BorderColor="#f00"
+            TextColor="#ff0"
+            FontSize="20"
+            BorderWidth="2"
+            WidthRequest="110"
+            HeightRequest="80"
+            HorizontalOptions="Center" />
+
+    <!-- Normal button -->
+    <Button Text="Hello4"
+            TextColor="#ff0"
+            FontSize="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="110"
+            HeightRequest="80" />
+  </StackLayout>
 </ContentPage>
