@@ -8,52 +8,52 @@ XAML Bordered-label-like elements
 ### [Page1.xaml](XamarinFormsBorderedLabels/XamarinFormsBorderedLabels/Page1.xaml)
 ```xml
 ....
-....
 <!-- Thin red border -->
-<Frame Padding="0"
-       VerticalOptions="Center"
-       HorizontalOptions="Center"
-       OutlineColor="#f00"
-       WidthRequest="110"
+<Frame WidthRequest="110"
        HeightRequest="80"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       Padding="0"
+       OutlineColor="#f00"
        >
-  <Label Text="Hello1" TextColor="#ff0" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" />
+  <Label Text="Hello1" TextColor="#ff0" FontSize="20"
+         HorizontalOptions="Center"
+         VerticalOptions="Center" />
 </Frame>
 
 <!-- Thick red border, and black background -->
-<Frame Padding="2"
+<Frame WidthRequest="106" HeightRequest="76" HorizontalOptions="Center" VerticalOptions="Center"
+       Padding="2"
        BackgroundColor="#f00"
-       VerticalOptions="Center"
-       HorizontalOptions="Center"
-       WidthRequest="106"
-       HeightRequest="76">
+       >
   <Frame Padding="0"
          BackgroundColor="#000"
          VerticalOptions="Fill"
          HorizontalOptions="Fill">
-    <Label Text="Hello2" TextColor="#ff0" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" />
+    <Label Text="Hello2" TextColor="#ff0" FontSize="20"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
   </Frame>
 </Frame>
 
 <!-- Thick red border (It has Label-like appearance, but it's not a Label but a Button  -->
-<Button Text="Hello3"
-        FontSize="20"
-        TextColor="#ff0"
-        WidthRequest="110"
-        HeightRequest="80"
-        BackgroundColor="Transparent"
-        BorderColor="#f00"
-        BorderWidth="2"
-        HorizontalOptions="Center" />
-
-<!-- Normal button -->
-<Button Text="Hello4"
-        TextColor="#ff0"
-        FontSize="20"
+<Button Text="Hello3" TextColor="#ff0" FontSize="20"
         WidthRequest="110"
         HeightRequest="80"
         HorizontalOptions="Center"
-        VerticalOptions="Center" />
+        VerticalOptions="Center"
+        BackgroundColor="Transparent"
+        BorderColor="#f00"
+        BorderWidth="2"
+        />
+
+<!-- Normal button -->
+<Button Text="Hello4" TextColor="#ff0" FontSize="20"
+        WidthRequest="110"
+        HeightRequest="80"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        />
 ....
 ```
 
