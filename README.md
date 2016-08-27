@@ -72,6 +72,7 @@ Xamarin.Forms Label element has no border attribute, so we have to use some tric
 - This is **not a Label** but a Button element, but it has Label-like appearance.
 - Set BackgroundColor="Transparent" to remove default button appearance.
 - Then, set BorderColor and BorderWidth to make red thick border.
+- **I personally like this way.**
 
 ### Hello4
 - This is a normal Button. (for comparison)
