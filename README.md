@@ -8,7 +8,7 @@ XAML Bordered-label-like elements
 ### [Page1.xaml](XamarinFormsBorderedLabels/XamarinFormsBorderedLabels/Page1.xaml)
 ```xml
 ....
-<!-- Thin red border -->
+<!-- Hello1: Thin red border -->
 <Frame WidthRequest="110"
        HeightRequest="80"
        HorizontalOptions="Center"
@@ -21,7 +21,7 @@ XAML Bordered-label-like elements
          VerticalOptions="Center" />
 </Frame>
 
-<!-- Thick red border, and black background -->
+<!-- Hello2: Thick red border, and black background -->
 <Frame WidthRequest="106" HeightRequest="76" HorizontalOptions="Center" VerticalOptions="Center"
        Padding="2"
        BackgroundColor="#f00"
@@ -36,7 +36,7 @@ XAML Bordered-label-like elements
   </Frame>
 </Frame>
 
-<!-- Thick red border (It has Label-like appearance, but it's not a Label but a Button  -->
+<!-- Hello3: Thick red border (It has Label-like appearance, but it's not a Label but a Button  -->
 <Button Text="Hello3" TextColor="#ff0" FontSize="20"
         WidthRequest="110"
         HeightRequest="80"
@@ -47,7 +47,7 @@ XAML Bordered-label-like elements
         BorderWidth="2"
         />
 
-<!-- Normal button -->
+<!-- Hello4: Normal button -->
 <Button Text="Hello4" TextColor="#ff0" FontSize="20"
         WidthRequest="110"
         HeightRequest="80"
