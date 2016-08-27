@@ -61,10 +61,10 @@ XAML Bordered-label-like elements
 Xamarin.Forms Label element has no border attribute, so we have to use some tricks.
 
 ### Hello1
-- This is a Label arounded by Frame which has OutlineColor attribute.
+- This is a Label surrounded by Frame which has OutlineColor attribute.
 
 ### Hello2
-- This is a Label arounded by **TWO** Frames which have BackgroundColor attributes.
+- This is a Label surrounded by **TWO** Frames which have BackgroundColor attributes.
 - Outside Frame porvides border-colored BackgroundColor attribute.
 - Inside Frame porvides face-colored BackgroundColor attribute.
 
